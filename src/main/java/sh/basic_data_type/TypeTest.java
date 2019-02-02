@@ -1,54 +1,59 @@
 package sh.basic_data_type;
 
+import java.math.BigInteger;
+
 import org.junit.Test;
 
 public class TypeTest {
 
+	/**
+	 * 基本的数据类型的大小示例
+	 */
 	@Test
 	public void baseTypeSize() {
-		// byte
+		// byte 8
 		System.out.println("基本类型：byte 二进制位数：" + Byte.SIZE);
 		System.out.println("包装类：java.lang.Byte");
 		System.out.println("最小值：Byte.MIN_VALUE=" + Byte.MIN_VALUE);
 		System.out.println("最大值：Byte.MAX_VALUE=" + Byte.MAX_VALUE);
 		System.out.println();
 
-		// short
+		// short 16
 		System.out.println("基本类型：short 二进制位数：" + Short.SIZE);
 		System.out.println("包装类：java.lang.Short");
 		System.out.println("最小值：Short.MIN_VALUE=" + Short.MIN_VALUE);
 		System.out.println("最大值：Short.MAX_VALUE=" + Short.MAX_VALUE);
 		System.out.println();
 
-		// int
+		// int 32
 		System.out.println("基本类型：int 二进制位数：" + Integer.SIZE);
 		System.out.println("包装类：java.lang.Integer");
 		System.out.println("最小值：Integer.MIN_VALUE=" + Integer.MIN_VALUE);
 		System.out.println("最大值：Integer.MAX_VALUE=" + Integer.MAX_VALUE);
 		System.out.println();
 
-		// long
+		// long 64
 		System.out.println("基本类型：long 二进制位数：" + Long.SIZE);
 		System.out.println("包装类：java.lang.Long");
 		System.out.println("最小值：Long.MIN_VALUE=" + Long.MIN_VALUE);
 		System.out.println("最大值：Long.MAX_VALUE=" + Long.MAX_VALUE);
 		System.out.println();
 
-		// float
+		// float 32
 		System.out.println("基本类型：float 二进制位数：" + Float.SIZE);
 		System.out.println("包装类：java.lang.Float");
 		System.out.println("最小值：Float.MIN_VALUE=" + Float.MIN_VALUE);
 		System.out.println("最大值：Float.MAX_VALUE=" + Float.MAX_VALUE);
 		System.out.println();
 
-		// double
+		// double 64
 		System.out.println("基本类型：double 二进制位数：" + Double.SIZE);
 		System.out.println("包装类：java.lang.Double");
 		System.out.println("最小值：Double.MIN_VALUE=" + Double.MIN_VALUE);
 		System.out.println("最大值：Double.MAX_VALUE=" + Double.MAX_VALUE);
 		System.out.println();
 
-		// char
+		// char 16
 		System.out.println("基本类型：char 二进制位数：" + Character.SIZE);
 		System.out.println("包装类：java.lang.Character");
 		// 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台
@@ -57,4 +62,37 @@ public class TypeTest {
 		System.out.println("最大值：Character.MAX_VALUE=" + (int) Character.MAX_VALUE);
 	}
 
+	/**
+	 * char类型简单说明
+	 */
+	@Test
+	public void charType() {
+		/**
+		 * char 类型的范围 [\u0000-\uffff] == [0-65535] 通过测试，16进制类型，需要强转，才可以为 int 类型
+		 */
+		char MIN_VALUE = '\u0000';
+		char MAX_VALUE = '\uffff';
+		int min_int = (int) MIN_VALUE;
+		int max_int = (int) MAX_VALUE;
+		System.out.println("最小值: " + min_int);
+		System.out.println("最大值: " + max_int);
+	}
+
+	/**
+	 * final常量说明
+	 */
+	@Test
+	public void finalType() {
+		final double PI = 3.1415927;
+		System.out.println(PI);
+	}
+
+	/**
+	 * 基础的Integer类
+	 */
+	@Test
+	public void integerType() {
+		BigInteger bi = new BigInteger("12433241123");
+		System.out.println(bi);
+	}
 }

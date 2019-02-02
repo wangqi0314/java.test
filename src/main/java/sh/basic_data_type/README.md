@@ -151,6 +151,7 @@ public void baseTypeSize() {
 包装类：java.lang.Byte
 最小值：Byte.MIN_VALUE=-128
 最大值：Byte.MAX_VALUE=127
+
 基本类型：short 二进制位数：16
 包装类：java.lang.Short
 最小值：Short.MIN_VALUE=-32768
