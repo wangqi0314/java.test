@@ -1,4 +1,4 @@
-package sh.se.basic_data_type;
+package sh.basic_data_type;
 
 public class TypeTest {
 
