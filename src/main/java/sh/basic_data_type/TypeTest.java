@@ -1,8 +1,11 @@
 package sh.basic_data_type;
 
+import org.junit.Test;
+
 public class TypeTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void baseTypeSize() {
 		// byte
 		System.out.println("基本类型：byte 二进制位数：" + Byte.SIZE);
 		System.out.println("包装类：java.lang.Byte");
