@@ -21,7 +21,7 @@ import java.util.List;
  练习：I am a student!   写一个方法：实现输出 !student a am I
 
  */
-public class baseStringDemo {
+public class StringDemo {
 	public static void main(String[] args) {
 		String str = "   abc  de  ";
 		// str = "    ";

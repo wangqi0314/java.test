@@ -8,7 +8,7 @@ import org.junit.Test;
  * @author admin
  *
  */
-public class baseOperator {
+public class OperatorTest {
 
 	@Test
 	public void test1() {

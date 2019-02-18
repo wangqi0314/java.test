@@ -7,7 +7,7 @@ import org.junit.Test;
  * java.lang.StringBuffer：可变的字符序列
  * java.lang.StringBuilder:可变的字符序列，是jdk5.0新加入的，线程不安全，效率要高于StringBuffer.
  */
-public class baseStringBuffer {
+public class StringBufferTest {
 	/*
 	 * 对比String，StringBuffer,StringBuilder三者在添加上的效率： 效率从高到底： StringBuilde >
 	 * StringBuffer > String
