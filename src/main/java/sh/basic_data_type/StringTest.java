@@ -163,6 +163,19 @@ public class StringTest {
 		Person p2 = new Person("AA");
 		System.out.println("^_^" + (p1.name == p2.name));// true
 	}
+
+	@Test
+	public void stringEqualsTest() {
+		String a = "ab";
+		String b = "ab";
+//		System.out.println((a == a));  //这种比较，针对应用类型，同值不用应用是无用的；
+		System.out.println(a.equals(b));
+
+		String c = new String("CD");
+		String d = new String("CD");
+		System.out.println((c == d));
+		System.out.println(c.equals(d));
+	}
 }
 
 class Person {
