@@ -1,4 +1,4 @@
-package sh.basic_data_type;
+package sh.basic;
 
 import org.junit.Test;
 

@@ -1,11 +1,11 @@
-package sh.basic_data_type;
+package sh.regular;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.junit.Test;
 
-public class RregularExpressionsTest {
+public class RegularExpressionsTest {
 
 	@Test
 	public void Test() {
