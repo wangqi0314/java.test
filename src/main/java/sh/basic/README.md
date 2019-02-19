@@ -1,3 +1,22 @@
+<!-- TOC -->
+
+- [Java 基本数据类型](#java-基本数据类型)
+    - [Java的两大数据类型：](#java的两大数据类型)
+        - [内置数据类型](#内置数据类型)
+            - [byte：](#byte)
+            - [short：](#short)
+            - [int：](#int)
+            - [long：](#long)
+            - [float：](#float)
+            - [double：](#double)
+            - [boolean：](#boolean)
+            - [char：](#char)
+            - [实例](#实例)
+        - [引用类型](#引用类型)
+    - [Java常量](#java常量)
+
+<!-- /TOC -->
+
 ## Java 基本数据类型
 
 变量就是申请内存来存储值。也就是说，当创建变量的时候，需要在内存中申请空间。
