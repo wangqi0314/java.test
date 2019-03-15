@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address1" class="sh.com.spring.beans.autowrite.Address"
+		p:city="ShangHai" p:street="LuBanLu!!"></bean>
+	<bean id="car" class="sh.com.spring.beans.autowrite.Car" p:brand="BaoMa"
+		p:price="900.89"></bean>
+	<bean id="person1" class="sh.com.spring.beans.autowrite.Person"
+		p:name="WQ-00910" autowire="byType"></bean>
+</beans>

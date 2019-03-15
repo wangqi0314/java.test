@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car" class="sh.com.spring.beans.cycel.Car" init-method="init"
+		destroy-method="destroy">
+		<property name="brand" value="BaoMa"></property>
+		<property name="price" value="200000"></property>
+		<property name="tyrePerimeter" value="#{T(java.lang.Math).PI*80}"></property>
+	</bean>
+	<bean id="myBean" class="sh.com.spring.beans.cycel.MyBeanPostProcessor"></bean>
+</beans>

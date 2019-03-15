@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 指定spring IOC 扫描的包 -->
+	<!-- 可是通过 resource-pattern 可以扫描具体的表名字 -->
+	<context:component-scan base-package="sh.spring.beans.annotation" >
+	<!--  -->
+	<!-- 可以指定不包含的包
+	<context:exclude-filter type="annotation" expression=""/>
+	 -->
+	</context:component-scan>
+</beans>

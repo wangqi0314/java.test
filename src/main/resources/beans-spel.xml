@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address" class="sh.com.spring.beans.spel.Address">
+		<property name="city" value="#{'ShangHai'}"></property>
+		<property name="street" value="tianJin"></property>
+	</bean>
+
+	<bean id="car" class="sh.com.spring.beans.spel.Car">
+		<property name="brand" value="BaoMa"></property>
+		<property name="price" value="200000"></property>
+		<property name="tyrePerimeter" value="#{T(java.lang.Math).PI*80}"></property>
+	</bean>
+
+	<bean id="person" class="sh.com.spring.beans.spel.Person">
+		<property name="car" value="#{car}"></property>
+		<property name="city" value="#{address.city}"></property>
+		<property name="info" value="#{car.price >150000?'金领':'白领'}"></property>
+	</bean>
+</beans>
