@@ -5,6 +5,9 @@ public class Car {
 	private double price;
 	private double tyrePerimeter;
 
+	public final String XXXX = "AAAAAAAAAAAAAAA";
+	protected int aa = 123456;
+
 	public String getBrand() {
 		return brand;
 	}
@@ -31,17 +34,18 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "Car [brand=" + brand + ", price=" + price + ", tyrePerimeter="
-				+ tyrePerimeter + "]";
+		return "Car [brand=" + brand + ", price=" + price + ", tyrePerimeter=" + tyrePerimeter + "]";
 	}
-	
-	public void init(){
+
+	public void init() {
 		System.out.println("init.....");
 	}
-	public void destroy(){
+
+	public void destroy() {
 		System.out.println("destroy.....");
 	}
-	public Car(){
+
+	public Car() {
 		System.out.println("car........");
 	}
 }
