@@ -13,18 +13,15 @@ public class CarfactoryBean implements FactoryBean<Car> {
 		this.brand = brand;
 	}
 
-	@Override
 	public Car getObject() throws Exception {
 
 		return new Car(brand, 23400, 230.89);
 	}
 
-	@Override
 	public Class<?> getObjectType() {
 		return Car.class;
 	}
 
-	@Override
 	public boolean isSingleton() {
 		return true;
 	}

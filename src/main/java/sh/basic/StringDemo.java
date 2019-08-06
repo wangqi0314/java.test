@@ -58,7 +58,7 @@ public class StringDemo {
 		String maxStr = (str1.length() > str2.length()) ? str1 : str2;
 		String minStr = (str1.length() < str2.length()) ? str1 : str2;
 		int len = minStr.length();
-		List<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<String>();
 		for (int i = 0; i < len; i++) {
 			for (int x = 0, y = len - i; y <= len; x++, y++) {
 				String str = minStr.substring(x, y);

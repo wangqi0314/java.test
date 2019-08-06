@@ -37,7 +37,7 @@ public class ClazzUtils {
 	 * 
 	 */
 	public static List<String> getClazzName(String packageName, boolean showChildPackageFlag) {
-		List<String> result = new ArrayList<>();
+		List<String> result = new ArrayList<String>();
 		String suffixPath = packageName.replaceAll("\\.", "/");
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		System.out.println(loader);
@@ -84,7 +84,7 @@ public class ClazzUtils {
 	 * 
 	 */
 	private static List<String> getAllClassNameByFile(File file, boolean flag) {
-		List<String> result = new ArrayList<>();
+		List<String> result = new ArrayList<String>();
 		if (!file.exists()) {
 			return result;
 		}
@@ -143,7 +143,7 @@ public class ClazzUtils {
 	 * 
 	 */
 	private static List<String> getAllClassNameByJar(JarFile jarFile, String packageName, boolean flag) {
-		List<String> result = new ArrayList<>();
+		List<String> result = new ArrayList<String>();
 		Enumeration<JarEntry> entries = jarFile.entries();
 		while (entries.hasMoreElements()) {
 			JarEntry jarEntry = entries.nextElement();

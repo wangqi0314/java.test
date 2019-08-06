@@ -9,7 +9,6 @@ public class UserRepositorImpl implements UserRepositor {
 		// TODO 自动生成的构造函数存根
 	}
 
-	@Override
 	public void save() {
 		// TODO 自动生成的方法存根
 		System.out.println("UserRepositorImpl save.....");
