@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>sh.com.java</groupId>
-	<artifactId>java.test</artifactId>
+	<groupId>sh.com</groupId>
+	<artifactId>sh.java.test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>java.test</name>
+	<name>sh.java.test</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -67,6 +67,14 @@
 			<version>5.0.12.RELEASE</version>
 		</dependency>
 		<!-- spring 必要jar包 -->
+
+		<!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+		<dependency>
+			<groupId>com.rabbitmq</groupId>
+			<artifactId>amqp-client</artifactId>
+			<version>5.4.3</version>
+		</dependency>
+
 
 
 	</dependencies>
