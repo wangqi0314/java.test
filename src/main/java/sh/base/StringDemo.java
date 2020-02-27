@@ -1,4 +1,4 @@
-﻿package sh.basic;
+﻿package sh.base;
 
 import java.util.ArrayList;
 import java.util.Arrays;

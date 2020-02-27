@@ -37,20 +37,5 @@ public class Box<T> {
 		System.out.printf("Integer Value :%d\n\n", integerBox.get());
 		System.out.printf("String Value :%s\n", stringBox.get());
 
-		Box b = new Box();
-		b.add(3);
-		System.out.println(b.get());
-
-		Box bb = integerBox;
-		bb.add("123");
-		integerBox = b;
-
-		Box<Integer> bi;
-		bi = createBox();
-
-	}
-
-	public static Box createBox() {
-		return new Box();
 	}
 }
