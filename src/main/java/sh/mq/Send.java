@@ -12,12 +12,10 @@ public class Send {
 
 		ConnectionFactory factory = new ConnectionFactory();
 
-		factory.setHost("116.62.28.180");
+		factory.setHost("111.111.111.111.");
 		factory.setPort(5672);
-		factory.setUsername("anyi");
-		factory.setPassword("QmA17YugOQq");
-
-//  "url": "amqp://anyi:QmA17YugOQq@116.62.28.180:5672"
+		factory.setUsername("#￥EEEEEEEE");
+		factory.setPassword("$%RFFGFDDDD");
 
 		try (Connection connection = factory.newConnection(); Channel channel = connection.createChannel()) {
 			channel.queueDeclare(QUEUE_NAME, false, false, false, null);
